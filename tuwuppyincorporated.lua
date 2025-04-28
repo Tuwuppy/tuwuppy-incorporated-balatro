@@ -1,8 +1,8 @@
 SMODS.Atlas {
-    key = "Placeholder",
-    path = "Assets/Placeholder.png",
-    px = 71,
-    py = 95
+    key = "Placeholders",
+    path = "Placeholders.png",
+    px = 35,
+    py = 47
 }
 
 SMODS.Joker {
@@ -20,7 +20,7 @@ SMODS.Joker {
 	-- Sets rarity. 1 common, 2 uncommon, 3 rare, 4 legendary.
 	rarity = 1,
 	-- Which atlas key to pull from.
-	atlas = 'Placeholder',
+	atlas = 'Placeholders',
 	-- This card's position on the atlas, starting at {x=0,y=0} for the very top left.
 	pos = { x = 0, y = 0 },
 	-- Cost of card in shop.
@@ -41,5 +41,4 @@ SMODS.Joker {
 			}
 		end
 	end
-}
 }
