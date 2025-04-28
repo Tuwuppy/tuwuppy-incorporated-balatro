@@ -8,7 +8,7 @@ SMODS.Atlas {
 SMODS.Joker {
     key = 'tinc-test',
     loc_txt = {
-        name = "Test Jonkler",
+        name = "Test Jonkler?",
         text = {
             "{C:mult}+#1# {} Mult"
         }
