@@ -14,7 +14,7 @@ SMODS.Joker {
         }
     },
 	atlas = "Placeholders",
-	rarity = 4,
+	rarity = 3,
 	cost = 5,
 	config = {extra={xmult=2,xmult_change=1}},
 	loc_vars = function(self, info_queue, card)
