@@ -5,33 +5,15 @@ SMODS.Atlas {
     py = 47
 }
 
-SMODS.Joker {
-    key = 'tinc-test',
-    loc_txt = {
-        name = "Test Jonkler",
-        text = {
-            "{X:mult,C:white}X#1#{} Mult, Increases by the amount of times you've played a hand each time you play a hand."
-        }
-    },
-	atlas = "Placeholders",
-	rarity = 3,
-	cost = 5,
-	config = {extra={xmult=2,xmult_change=1}},
-	loc_vars = function(self, info_queue, card)
-		return {
-			vars = {
-				card.ability.extra.xmult,
-				card.ability.extra.xmult_change
-			}
-		}
-	end,
-    calculate = function(self, card, context)
-		if context.joker_main then
-			card.ability.extra.xmult = card.ability.extra.xmult + card.ability.extra.xmult_change
-			card.ability.extra.xmult_change = card.ability.extra.xmult_change + 1
-			return {
-				xmult = card.ability.extra.xmult
-			}
-		end
-	end
+local filesToLoad = {
+	"Jokers/common"
+	-- add the other stuff i make in here later
+	-- also make sure you list the files in the order you want to load them,
+	-- so probably specific categories in order from most to least common and then the next category of items
 }
+-- loads all files in the filestoload array thing so that you can actually use them in game
+-- could go the way ruby did and make this far more complicated to order it properly but i can just order the table so :shrug:
+for _, file in pairs(filesToLoad) do
+	local loadedFile = SMODS.load_file(file..".lua")
+	local ranFile = loadedFile()
+end
