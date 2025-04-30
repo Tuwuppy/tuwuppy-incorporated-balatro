@@ -6,7 +6,7 @@ SMODS.Atlas {
 }
 
 local filesToLoad = {
-	"Rarities/machine",
+	"ConsumableTypes/machine",
 	"Jokers/common",
 	"Consumables/machine"
 	-- add the other stuff i make in here later
