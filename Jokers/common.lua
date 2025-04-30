@@ -1,5 +1,5 @@
 SMODS.Joker {
-    key = 'tinc-test',
+    key = 'test',
     loc_txt = {
         name = "Test Jonkler",
         text = {
