@@ -8,8 +8,8 @@ SMODS.Atlas {
 -- add rarities inside their own files
 -- so make the industry rarity inside the industry jokers file
 local filesToLoad = {
-	"Items/Consumables/machine",
-	"Items/Jokers/common",
+	"Additions/Consumables/machine",
+	"Additions/Jokers/common",
 	-- add the other stuff i make in here later
 	-- also make sure you list the files in the order you want to load them,
 	-- so probably specific categories in order from most to least common and then the next category of items
