@@ -8,7 +8,7 @@ SMODS.Atlas {
     key = "oil",
     path = "oil.png",
     px = 68,
-    py = 92m
+    py = 92
 }
 
 -- add rarities inside their own files

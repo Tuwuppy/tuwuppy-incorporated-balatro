@@ -1,36 +1,29 @@
 SMODS.ConsumableType {
-    key = "machine",
+    key = "technology",
     primary_colour = HEX("808080"),
     secondary_colour = HEX("d3d3d3"),
     loc_txt = {
-        name = "Machine",
-        collection = "Machine",
+        name = "Technology",
+        collection = "Technology",
         undiscovered = {
-            name = "Broken Machine",
-            text = {"Find this machine in game to fix it in the collection!"},
+            name = "Undiscovered Technology",
+            text = {"Discover this technology in game to reveal it in the collection!"},
         }
     }
 }
 -- if you forget: outside of calculate you do "ease_chips(5)" rather than "chips = 5"
 SMODS.Consumable {
-    key = "machinetest",
-    set = "machine",
+    key = "technologyoilprice",
+    set = "technology",
     loc_txt = {
-        name = "Machine Test",
-        text = {"Testing the custom consumable"}
+        name = "Oil Pipeline",
+        text = {"Adds 1$ of sell value to all your oil, permanently"}
     },
     atlas = "Placeholders",
-    cost = 3,
-    config = {extra={dollar_gain=5}},
-    loc_vars = function(self, info_queue, card)
-        return {
-            vars = {
-                card.ability.extra.dollar_gain
-            }
-        }
-    end,
+    cost = 5,
+    config = {},
     use = function(self, card, area, copier)
-        ease_dollars(5)
+        
     end,
     can_use = function(self, card)
         return true
