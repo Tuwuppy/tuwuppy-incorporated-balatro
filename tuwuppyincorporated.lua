@@ -1,13 +1,22 @@
 SMODS.Atlas {
-    key = "Placeholders",
+    key = "placeholders",
     path = "Placeholders.png",
     px = 35,
     py = 47
 }
+SMODS.Atlas {
+    key = "oil",
+    path = "oil.png",
+    px = 68,
+    py = 92m
+}
 
 -- add rarities inside their own files
 -- so make the industry rarity inside the industry jokers file
+
 local filesToLoad = {
+	"Additions/Resources/resource",
+	"Additions/Resources/oil",
 	"Additions/Consumables/machine",
 	"Additions/Jokers/common",
 	-- add the other stuff i make in here later
