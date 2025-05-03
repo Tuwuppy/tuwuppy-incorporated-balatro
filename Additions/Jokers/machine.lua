@@ -16,7 +16,7 @@ SMODS.Joker {
     key = "pumpjack",
     loc_txt = {
         name = 'Oil Pumpjack',
-        text = {"After defeating a blind, create 1 oil"}
+        text = {"At the end of the round, create 1 Oil"}
     },
     atlas = "placeholder",
     rarity = "tinc_machine",
