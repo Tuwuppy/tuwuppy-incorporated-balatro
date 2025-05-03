@@ -9,6 +9,21 @@ SMODS.ConsumableType {
     },
     shop_rate = 0
 }
+SMODS.Edition {
+    key = "resource_edition",
+    shader = false,
+    loc_txt = {
+        name = "Resource",
+        text = {"A resource card,", "does not count", "toward consumable limit."},
+        label = {"Resource 2:", "Electric Boogaloo"}
+    },
+    extra_cost = 0,
+    in_shop = false,
+    on_apply = function(card)
+        G.consumeables.config.card_limit = G.consumeables.config.card_limit + 1
+    end
+}
+
 SMODS.Consumable {
     key = "oil",
     set = 'resource',
@@ -17,9 +32,9 @@ SMODS.Consumable {
         text = {"A basic resource."}
     },
     atlas = "oil",
-    cost = 3,
+    cost = 7,
     set_ability = function(self, card, initial, delay_sprites)
-        card:set_edition("e_negative", true, true)
+        card:set_edition("e_tinc_resource_edition", true, true)
     end
     
 }
