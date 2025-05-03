@@ -17,7 +17,6 @@ SMODS.Atlas {
 local filesToLoad = {
 	"Additions/Resources/resources",
 	"Additions/Consumables/technology",
-	"Additions/Jokers/common",
 	"Additions/Jokers/machine",
 	-- add the other stuff i make in here later
 	-- also make sure you list the files in the order you want to load them,
