@@ -1,7 +1,7 @@
 SMODS.ConsumableType {
     key = "technology",
-    primary_colour = HEX("808080"),
-    secondary_colour = HEX("d3d3d3"),
+    primary_colour = HEX("0096FF"),
+    secondary_colour = HEX("63C5DA"),
     loc_txt = {
         name = "Technology",
         collection = "Technology",

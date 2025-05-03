@@ -6,7 +6,7 @@ SMODS.Joker {
             "{X:mult,C:white}X#1#{} Mult, Increases by the amount of times you've played a hand each time you play a hand."
         }
     },
-	atlas = "Placeholders",
+	atlas = "placeholder",
 	rarity = 3,
 	cost = 5,
 	config = {extra={xmult=2,xmult_change=1}},

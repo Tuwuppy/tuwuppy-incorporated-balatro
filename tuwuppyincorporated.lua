@@ -1,5 +1,5 @@
 SMODS.Atlas {
-    key = "placeholders",
+    key = "placeholder",
     path = "Placeholders.png",
     px = 35,
     py = 47
@@ -15,10 +15,10 @@ SMODS.Atlas {
 -- so make the industry rarity inside the industry jokers file
 
 local filesToLoad = {
-	"Additions/Resources/resource",
-	"Additions/Resources/oil",
-	"Additions/Consumables/machine",
+	"Additions/Resources/resources",
+	"Additions/Consumables/technology",
 	"Additions/Jokers/common",
+	"Additions/Jokers/machine",
 	-- add the other stuff i make in here later
 	-- also make sure you list the files in the order you want to load them,
 	-- so probably specific categories in order from most to least common and then the next category of items
