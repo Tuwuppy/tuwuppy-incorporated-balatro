@@ -19,7 +19,7 @@ SMODS.Consumable {
         name = "Oil Pipeline",
         text = {"Adds 1$ of sell value to all your oil, permanently"}
     },
-    atlas = "Placeholders",
+    atlas = "placeholder",
     cost = 5,
     config = {},
     use = function(self, card, area, copier)
